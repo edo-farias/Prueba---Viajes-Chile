@@ -17,6 +17,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600&display=swap" rel="stylesheet">
+    <!-- estilo css -->
+    <link rel="stylesheet" href="assets/css/style.css">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -25,55 +27,6 @@
     <!-- Fontawesom v.6 -->
     <script src="https://kit.fontawesome.com/7d4f10acf2.js" crossorigin="anonymous">
     </script>
-    <!-- este sera mi style.css -->
-    <style>
-        
-        body {
-            background-color: #000;
-            font-family: 'Cabin', sans-serif;
-        }
-        img {
-            object-fit:cover;
-        
-        }
-
-        .carrusel img{
-            height: 100vh;
-        }
-        section{
-            margin-top: 4rem;
-        }
-        .row{
-            margin-top: 4rem;
-            margin-bottom: 4rem;
-        }
-        .pt-1{
-            color: #00A5BB;
-            opacity: 1;
-            width: 100%;
-            margin-top: 4rem;
-        }
-        i{
-            font-size: 2.5rem;
-        }
-        h5{
-            font-weight: 600;
-        }
-        p{
-            font-weight: 400;
-        }
-        @media screen and (max-width: 640px) {
-            section{
-                display: none;
-            }
-        }
-           
-        
-        
-
-              
-    </style>
-
 </head>
 <body>
     <!-- Barra de navegacion + carrusel de imagenes -->
@@ -93,21 +46,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#Inicio">Inicio</a>
-
+                            <a class="nav-link text-white" href="#inicio">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#Quienes Somos">Quienes Somos</a>
-
+                            <a class="nav-link text-white" href="#quienessomos" data-toggle="tooltip" data-placement="right"
+                            title="Este botón te dirige directamente a la sección">Quienes Somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#Destacados">Destacados</a>
-
+                            <a class="nav-link text-white" href="#destacados" data-toggle="tooltip" data-placement="right"
+                            title="Este botón te dirige directamente a la sección">Destacados</a>
                         </li>
-
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#Contacto">Contacto</a>
-
+                            <a class="nav-link text-white" href="#contacto" data-toggle="tooltip" data-placement="right"
+                            title="Este botón te dirige directamente a la sección">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -115,7 +66,7 @@
         </nav>
         <!--Fin Navbar-->
         <!--Carrusel de imagenes-->
-        <div class="carrusel">
+        <div class="carrusel" id="inicio">
             <div id="carouselViajesChile" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -137,20 +88,20 @@
                   <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            
         </div>
         <!--Fin carrusel-->
-
     </header>
     <!-- ¿Quienes somos? -->
     <section>
-        <div class="container">
+        <!-- Título de la sección -->
+        <div class="container" id="quienessomos">
             <p class="h1 text-center text-white">¿Quienes somos?</p>
         </div>
         <!--Linea horizontal-->
         <div class="container-fluid">
             <hr class="pt-1">
         </div>
+        <!-- Tres columnas con texto e iconos de fontawesom-->
         <div class="container">        
             <div class="row">
                 <div class="col">
@@ -159,24 +110,18 @@
                             <i class="fa-solid fa-plane"></i>
                         </div>
                         <div class="card-body" style="background-color: #000000;">
-                            
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam rerum nisi unde vel fuga natus libero voluptates laborum odio quisquam facere, repudiandae repellat. Nostrum eligendi, architecto modi doloribus velit obcaecati magni quibusdam voluptate ex rerum perferendis dignissimos incidunt corporis iusto quaerat? Consequatur animi, voluptatum ratione voluptatem id beatae odit dignissimos nemo ullam explicabo nesciunt adipisci! Laborum quaerat nisi qui saepe atque ab voluptas excepturi mollitia aut quisquam cum reiciendis maiores voluptatibus harum eaque dolorem, eveniet pariatur animi iure. Explicabo distinctio assumenda veniam voluptates natus voluptatum esse error nam, iure quia obcaecati libero repellat laborum quod temporibus aut rem quam fugit ad alias ut vitae vel. Molestiae totam velit repellat, maxime eveniet ducimus delectus veritatis tempora impedit expedita temporibus exercitationem in beatae natus necessitatibus perferendis labore sequi porro obcaecati aliquam veniam provident. Accusantium autem esse quo quibusdam asperiores soluta, maiores sed, accusamus similique atque magnam! Necessitatibus dignissimos rerum aut non nesciunt.</p>
-                     
                     </div>
                 </div>
             </div> 
                 <div class="col">
                     <div class="card text-white bg-dark card-border-radius:0">
-                    
                         <div class="card-body" style="background-color: #000000;">
-                            
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam rerum nisi unde vel fuga natus libero voluptates laborum odio quisquam facere, repudiandae repellat. Nostrum eligendi, architecto modi doloribus velit obcaecati magni quibusdam voluptate ex rerum perferendis dignissimos incidunt corporis iusto quaerat? Consequatur animi, voluptatum ratione voluptatem id beatae odit dignissimos nemo ullam explicabo nesciunt adipisci! Laborum quaerat nisi qui saepe atque ab voluptas excepturi mollitia aut quisquam cum reiciendis maiores voluptatibus harum eaque dolorem, eveniet pariatur animi iure. Explicabo distinctio assumenda veniam voluptates natus voluptatum esse error nam, iure quia obcaecati libero repellat laborum quod temporibus aut rem quam fugit ad alias ut vitae vel. Molestiae totam velit repellat, maxime eveniet ducimus delectus veritatis tempora impedit expedita temporibus exercitationem in beatae natus necessitatibus perferendis labore sequi porro obcaecati aliquam veniam provident. Accusantium autem esse quo quibusdam asperiores soluta, maiores sed, accusamus similique atque magnam! Necessitatibus dignissimos rerum aut non nesciunt.</p>
-                      
                         </div>
                         <div class="card-footer text-white text-center" style="background-color: #00A5BB;">
                             <i class="fa-solid fa-mountain"></i>
                         </div>
-                        
                     </div>
                 </div>
                 <div class="col">
@@ -190,20 +135,20 @@
                     </div>
                 </div>
             </div>
-        </div>    
-
+        </div>
+        <!-- Fin de las tres columnas -->    
     </section>
     <!-- Destacados (cards) -->
     <main>
-        <div class="container">
+        <!-- Título del principal -->
+        <div class="container mt-5" id="destacados">
             <p class="h1 text-center text-white">Destacados</p>
-            
-
         </div>
         <!--Linea horizontal-->
         <div class="container-fluid">
             <hr class="pt-1">
         </div>
+        <!-- Inicio de las cards-->
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-3 mb-3">
@@ -244,24 +189,47 @@
                 </div>
               </div>
         </div>
-
+        <!-- Fin de las cards-->
     </main>
     <!-- Formulario de contacto -->
     <article>
-        <!-- Formulario de contacto -->
-        <div class="container">
+        <div class="container" id="contacto">
             <p class="h1 text-center text-white">Contacto</p>
         </div>
         <!--Linea horizontal-->
         <div class="container-fluid">
             <hr class="pt-1">
         </div>
-
+        <div class="container my-5">
+            <!-- Código Typeform-->
+            <div data-tf-widget="UUr4xJP7" data-tf-iframe-props="title=Formulario de contacto" data-tf-medium="snippet" style="width:100%;height:500px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
+        </div>
     </article>
     <!-- Barra inferior + iconos fontawesom -->
     <footer>
+        <div class="container text-white py-1 text-center">
+            <div class="row container m-auto">
+                <div class="col-md-4">
+                    <h3 class="text-uppercase mt-2" data-toggle="tooltip" data-placement="right"
+                        title="Sigue nuestras redes sociales"> Viajes Chile </h3>
+                </div>
+                <div class="col-md-4 ms-auto">
+                    <a href="https://github.com/" target="_blank">
+                        <i class="fab fa-github-square fa-2x mx-1 mt-2" style="color: white;"></i>
+                    </a>
+                    <a href="https://linkedin.com/" target="_blank">
+                        <i class="fab fa-linkedin fa-2x mx-1" style="color: white;"></i>
+                    </a>    
+                    <a href="https://twitter.com/" target="_blank">
+                        <i class="fab fa-twitter-square fa-2x mx-1" style="color: white;"></i>
 
+                    </a>
+                    <a href="https://facebook.com/" target="_blank">
+                        <i class="fab fa-facebook-square fa-2x mx-1" style="color: white;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>    
     </footer>
-    
 </body>
 </html>
