@@ -24,8 +24,11 @@ section{
 .pt-1{
     color: #00A5BB;
     opacity: 1;
-    width: 100%;
+    width: 90%;
+    height: 5px;
     margin-top: 4rem;
+    margin-left: 5%;
+    text-align: left;
 }
 i{
     font-size: 2.5rem;
