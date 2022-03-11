@@ -5,6 +5,7 @@ html {
 body {
     background-color: #000;
     font-family: 'Cabin', sans-serif;
+    position: relative;
 }
 img {
     object-fit:cover;
@@ -47,6 +48,7 @@ p{
 footer{
     background-color: #00A5BB;
 }
+
    
 
 

@@ -27,8 +27,9 @@
     <!-- Fontawesom v.6 -->
     <script src="https://kit.fontawesome.com/7d4f10acf2.js" crossorigin="anonymous">
     </script>
+    
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
     <!-- Barra de navegacion + carrusel de imagenes -->
     <header>
         <!--Navbar-->
@@ -44,23 +45,25 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#inicio">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#quienessomos" data-toggle="tooltip" data-placement="right"
-                            title="Este botón te dirige directamente a la sección">Quienes Somos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#destacados" data-toggle="tooltip" data-placement="right"
-                            title="Este botón te dirige directamente a la sección">Destacados</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#contacto" data-toggle="tooltip" data-placement="right"
-                            title="Este botón te dirige directamente a la sección">Contacto</a>
-                        </li>
-                    </ul>
+                    <div class="ms-auto" id="navbar-example">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item" style="background-color:transparent;">
+                                <a class="nav-link text-white" style="background-color: transparent;" href="#inicio">Inicio</a>
+                            </li>
+                            <li class="nav-item" style="background-color:transparent;">
+                                <a class="nav-link text-white" style="background-color: transparent;" href="#quienessomos" data-toggle="tooltip" data-placement="right"
+                                title="Este botón te dirige directamente a la sección">Quienes Somos</a>
+                            </li>
+                            <li class="nav-item" style="background-color:transparent;">
+                                <a class="nav-link text-white" style="background-color: transparent;" href="#destacados" data-toggle="tooltip" data-placement="right"
+                                title="Este botón te dirige directamente a la sección">Destacados</a>
+                            </li>
+                            <li class="nav-item" style="background-color:transparent;">
+                                <a class="nav-link text-white" style="background-color:transparent;" href="#contacto" data-toggle="tooltip" data-placement="right"
+                                title="Este botón te dirige directamente a la sección">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>    
                 </div>
             </div>
         </nav>
