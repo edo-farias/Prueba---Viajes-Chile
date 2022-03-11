@@ -10,7 +10,7 @@
     <meta name="author" content="Eduardo Farias Concha">
     <!-- titulo de la pestaña -->
     <title>Viajes Chile</title>
-    <!-- CSS only Bootstrap -->
+    <!-- CSS only Bootstrap v5.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Google Fonts  -->
@@ -22,12 +22,21 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous">
     </script>
+    <!-- Fontawesom v.6 -->
+    <script src="https://kit.fontawesome.com/7d4f10acf2.js" crossorigin="anonymous">
+    </script>
+    <!-- este sera mi style.css -->
     <style>
         
         body {
             background-color: #000;
             font-family: 'Cabin', sans-serif;
         }
+        img {
+            object-fit:cover;
+        
+        }
+
         .carrusel img{
             height: 100vh;
         }
@@ -36,13 +45,34 @@
         }
         .row{
             margin-top: 4rem;
+            margin-bottom: 4rem;
         }
+        .pt-1{
+            color: #00A5BB;
+            opacity: 1;
+            width: 100%;
+            margin-top: 4rem;
+        }
+        i{
+            font-size: 2.5rem;
+        }
+        h5{
+            font-weight: 600;
+        }
+        p{
+            font-weight: 400;
+        }
+        @media screen and (max-width: 640px) {
+            section{
+                display: none;
+            }
+        }
+           
+        
+        
 
               
     </style>
-
-
-
 
 </head>
 <body>
@@ -116,27 +146,116 @@
     <section>
         <div class="container">
             <p class="h1 text-center text-white">¿Quienes somos?</p>
-            <hr class="py-1">
-            <div class="row">
-              <div class="col">
-                Column
-              </div>
-              <div class="col">
-                Column
-              </div>
-              <div class="col">
-                Column
-              </div>
-            </div>
         </div>
+        <!--Linea horizontal-->
+        <div class="container-fluid">
+            <hr class="pt-1">
+        </div>
+        <div class="container">        
+            <div class="row">
+                <div class="col">
+                    <div class="card text-white bg-dark">
+                        <div class="card-header text-white text-center" style="background-color: #00A5BB;">
+                            <i class="fa-solid fa-plane"></i>
+                        </div>
+                        <div class="card-body" style="background-color: #000000;">
+                            
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam rerum nisi unde vel fuga natus libero voluptates laborum odio quisquam facere, repudiandae repellat. Nostrum eligendi, architecto modi doloribus velit obcaecati magni quibusdam voluptate ex rerum perferendis dignissimos incidunt corporis iusto quaerat? Consequatur animi, voluptatum ratione voluptatem id beatae odit dignissimos nemo ullam explicabo nesciunt adipisci! Laborum quaerat nisi qui saepe atque ab voluptas excepturi mollitia aut quisquam cum reiciendis maiores voluptatibus harum eaque dolorem, eveniet pariatur animi iure. Explicabo distinctio assumenda veniam voluptates natus voluptatum esse error nam, iure quia obcaecati libero repellat laborum quod temporibus aut rem quam fugit ad alias ut vitae vel. Molestiae totam velit repellat, maxime eveniet ducimus delectus veritatis tempora impedit expedita temporibus exercitationem in beatae natus necessitatibus perferendis labore sequi porro obcaecati aliquam veniam provident. Accusantium autem esse quo quibusdam asperiores soluta, maiores sed, accusamus similique atque magnam! Necessitatibus dignissimos rerum aut non nesciunt.</p>
+                     
+                    </div>
+                </div>
+            </div> 
+                <div class="col">
+                    <div class="card text-white bg-dark card-border-radius:0">
+                    
+                        <div class="card-body" style="background-color: #000000;">
+                            
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam rerum nisi unde vel fuga natus libero voluptates laborum odio quisquam facere, repudiandae repellat. Nostrum eligendi, architecto modi doloribus velit obcaecati magni quibusdam voluptate ex rerum perferendis dignissimos incidunt corporis iusto quaerat? Consequatur animi, voluptatum ratione voluptatem id beatae odit dignissimos nemo ullam explicabo nesciunt adipisci! Laborum quaerat nisi qui saepe atque ab voluptas excepturi mollitia aut quisquam cum reiciendis maiores voluptatibus harum eaque dolorem, eveniet pariatur animi iure. Explicabo distinctio assumenda veniam voluptates natus voluptatum esse error nam, iure quia obcaecati libero repellat laborum quod temporibus aut rem quam fugit ad alias ut vitae vel. Molestiae totam velit repellat, maxime eveniet ducimus delectus veritatis tempora impedit expedita temporibus exercitationem in beatae natus necessitatibus perferendis labore sequi porro obcaecati aliquam veniam provident. Accusantium autem esse quo quibusdam asperiores soluta, maiores sed, accusamus similique atque magnam! Necessitatibus dignissimos rerum aut non nesciunt.</p>
+                      
+                        </div>
+                        <div class="card-footer text-white text-center" style="background-color: #00A5BB;">
+                            <i class="fa-solid fa-mountain"></i>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-white bg-dark">
+                        <div class="card-header text-white text-center" style="background-color: #00A5BB;">
+                            <i class="fa-solid fa-route"></i>
+                        </div>
+                        <div class="card-body" style="background-color: #000000;">
+                            <p class="card-text text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam rerum nisi unde vel fuga natus libero voluptates laborum odio quisquam facere, repudiandae repellat. Nostrum eligendi, architecto modi doloribus velit obcaecati magni quibusdam voluptate ex rerum perferendis dignissimos incidunt corporis iusto quaerat? Consequatur animi, voluptatum ratione voluptatem id beatae odit dignissimos nemo ullam explicabo nesciunt adipisci! Laborum quaerat nisi qui saepe atque ab voluptas excepturi mollitia aut quisquam cum reiciendis maiores voluptatibus harum eaque dolorem, eveniet pariatur animi iure. Explicabo distinctio assumenda veniam voluptates natus voluptatum esse error nam, iure quia obcaecati libero repellat laborum quod temporibus aut rem quam fugit ad alias ut vitae vel. Molestiae totam velit repellat, maxime eveniet ducimus delectus veritatis tempora impedit expedita temporibus exercitationem in beatae natus necessitatibus perferendis labore sequi porro obcaecati aliquam veniam provident. Accusantium autem esse quo quibusdam asperiores soluta, maiores sed, accusamus similique atque magnam! Necessitatibus dignissimos rerum aut non nesciunt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
 
     </section>
     <!-- Destacados (cards) -->
     <main>
+        <div class="container">
+            <p class="h1 text-center text-white">Destacados</p>
+            
+
+        </div>
+        <!--Linea horizontal-->
+        <div class="container-fluid">
+            <hr class="pt-1">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3 mb-3">
+                  <div class="card text-white" style="width: 18rem; height: 100%; background-color: #00A5BB;">
+                    <img src="assets/img/card1.jpg" height="200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                      <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam fugiat sequi adipisci molestiae iste quas provident, porro, eligendi possimus enim velit praesentium veniam temporibus tempore maxime alias. Accusantium distinctio in doloribus adipisci? Voluptate, illo praesentium laudantium esse voluptatem assumenda sit commodi rem voluptas ipsum quas amet, quibusdam in voluptatibus non.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 mb-3">
+                  <div class="card text-white" style="width: 18rem; height: 100%; background-color: #00A5BB;">
+                    <img src="assets/img/card2.jpg" height="200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                      <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, recusandae id. Vero libero repudiandae similique laboriosam at labore ullam, quod perspiciatis alias quae praesentium magnam possimus animi, laborum voluptatem minima, enim accusantium eveniet odio? Perspiciatis, consequatur, iure esse perferendis voluptatibus incidunt optio iste quam sequi nesciunt facilis ad nihil dolorum.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 mb-3">
+                  <div class="card text-white" style="width: 18rem; height: 100%; background-color: #00A5BB;">
+                    <img src="assets/img/card3.jpg" height="200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fuga beatae, ipsam laudantium aperiam ullam blanditiis ut exercitationem voluptatem? Voluptates amet laudantium quos est beatae aperiam voluptate illum, perspiciatis omnis enim vel repellat officiis, dignissimos laboriosam, consectetur quisquam eos excepturi officia? Beatae ipsa perspiciatis ab dolore sunt atque recusandae blanditiis.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 mb-3">
+                  <div class="card text-white" style="width: 18rem; height: 100%; background-color: #00A5BB;">
+                    <img src="assets/img/card4.jpg" height="200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                      <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident exercitationem ad praesentium fugit ducimus soluta minus debitis nam, iste fuga mollitia at deserunt quo numquam eveniet? Perspiciatis quisquam quis culpa saepe, fugiat esse quia cupiditate a repellat accusantium aut officiis dolores voluptas! Itaque modi autem porro non voluptas eligendi adipisci.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
 
     </main>
     <!-- Formulario de contacto -->
     <article>
+        <!-- Formulario de contacto -->
+        <div class="container">
+            <p class="h1 text-center text-white">Contacto</p>
+        </div>
+        <!--Linea horizontal-->
+        <div class="container-fluid">
+            <hr class="pt-1">
+        </div>
 
     </article>
     <!-- Barra inferior + iconos fontawesom -->
